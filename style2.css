@@ -1,0 +1,72 @@
+/* Reset some default margin and padding */
+body, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background color to the body */
+body {
+    background-color: #03174d; /* Dark blue background color */
+    font-family: Arial, sans-serif; /* Use a common web font */
+}
+
+/* Style the header */
+header {
+    background-color: #fff; /* White background for the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.logo img {
+    max-width: 100px; /* Limit the logo's width */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style the about section */
+.about-section {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+h1 {
+    font-size: 30px;
+    color: #333; /* Dark gray text color */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #333; /* Dark gray text color */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333; /* Dark gray horizontal line */
+    margin-bottom: 20px;
+}

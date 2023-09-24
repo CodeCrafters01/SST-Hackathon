@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>MovieHub - Your Movie Destination</title>
+
+    <style>
+        /* CSS for background color change on hover */
+        .hover-bg:hover {
+            background-color: #03174d; /* Change to the brighter color you prefer */
+        }
+    </style>
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="MovieHub Logo">
+           
+        </div>
+        <!-- Menu bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="undermain.html">TV Shows</a></li>
+                <li><a href="undermain.html">Genres</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trending movies section (moved to the top) -->
+    <section class="trending-movies">
+        <h2>Trending Movies</h2>
+        <div class="trending-slider">
+            <!-- Individual trending movie items go here -->
+            <!-- Repeat the below div for each trending movie -->
+            <div class="trending-movie">
+                <img src="trend1.jpg" alt="Blue Beetle">
+                <h3>Blue Beetle</h3>
+            </div>
+            <!-- Add more trending movies as needed -->
+
+             <!-- Repeat the below div for each trending movie -->
+             <div class="trending-movie">
+                <img src="trend2.jpg" alt="Heart Of Stone">
+                <h3>Heart Of Stone</h3>
+            </div>
+            <!-- Add more trending movies as needed -->
+
+             <!-- Repeat the below div for each trending movie -->
+             <div class="trending-movie">
+                <img src="trend3.jpg" alt="Tu Jhoothi Main Makkaar">
+                <h3>Tu Jhoothi Main Makkaar</h3>
+            </div>
+            <!-- Add more trending movies as needed -->
+
+             <!-- Repeat the below div for each trending movie -->
+             <div class="trending-movie">
+                <img src="trend4.jpg" alt="Vikram Vedha">
+                <h3>Vikram Vedha
+                </h3>
+            </div>
+            <!-- Add more trending movies as needed -->
+
+        
+
+
+        </div>
+    </section>
+
+    <!-- Search bar (moved below Trending Movies) -->
+    <section class="search-bar">
+        <input type="text" placeholder="Search for movies...">
+        <button class="search-button"><i class="fas fa-search"></i> Search</button>
+    </section>
+
+    <!-- Sliding movie posters and other content -->
+    <section class="slider">
+        <div class="movie-slider">
+            <!-- Individual movie poster items go here -->
+            <div class="movie-poster">
+                <img src="trend2.jpg" alt="Heart Of Stone Poster">
+                <h2>Heart Of Stone</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="trend1.jpg" alt="blue beetle Poster">
+                <h2>blue beetle</h2>
+                <a href="https://video-downloads.googleusercontent.com/ADGPM2mKEVYSstgBJ480HE6Rdrknp5n-A0n3u0apnjoEkeM4LpAcMQGexG45sGhbd1mwPWBepRNUfVfjuclrPJ4KmU0xv7_U9HJYWkAFeYnyhL50sHeYiGMOSZTyY1S6HqwbC2-KHqFEFR0fs-ShHiThePghsYIRZq4ZIds3GfE7Fbq1-Rgu7YXKz_zeyb1zXTTQ9asn8MUooplEIPzAL_Dfw7o-gjWghRFdL2zBxN4OfK8Qckb-JtQ_od5sEDAF6RojB9oa2RIWZvxGANB31lnQcTPTThI4rNclEEn46q6wba2ZzpQdM4LRehZXCYMVIL6AOgfLcCLc47pSjzSxYADuoUIBQB7w0MTm7bkxdAqHf044B-vHoySR7AwVWF6wn7-9z72Skg6lFfbLBiOkGExPt0InUMAq6wFfKZaWt66VCr6_9DsqB8-1aJ7Lf2cF2splSfEcNC2HahuPiem6k_k_9676o1yvutW9TeDTDpcslmkr_xAp5cGVKZQTQI32mTrYnKbzQqdtAQKfKwCDgLujk9JDjACuskJnfsJEvOWhu7XHtQ1gOZIA96Ijdx-7Da0X0lEg_oB7nJ_AxR16mDY--rLvEzxW4lIX_YnVTZNZdYPeNxYGsQkTdoqp_HlMmpfQPypNgGSDcJ5cOnYdbymIefeJahl4z_P-Qh-WBXi67j-KAcuqZ4F0aCz23lczrx6Uln_sLcP7x8t5AS427kj4YcoZwWC8m199DBShh1Zg3SSDSI6C7x-lcTGqWpux-Ulmxabb1NKrqNxtMVDJbK38-jNzeVGOqER9M0Zd_5rr5jz1nhfK7tI6xqyJsuUSjZO6zEMKySLydlTWEeYu4mtIxlOHZN9gPL4yCeNt-zYSuViruhvUJejLJVNcvoqVRbSzYsO1auwYRlCrECNYbUAkAIFkmLIpGDqkq5jSdb6J7NyHUgF1-Y90OpmeNWOGNYXNN_pQfYFZGQYTBZ7uKCq6wXmCm6L50MffBFTpn990siROeYX6QWvlVKeMbenvb0LPu4BBccEwL7Pbh-qs01JUVrSWn4mtJQQEKo7o-INBuRcIhvDGzpek67CF7NpSjV3ISvFidTGRyl8_P9MWzj57BP2rtAnQdff_xjEedYtPrNQjLvpDqbohWolmuAzVwORMA8Hz_e8U
+                " class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="trend3.jpg" alt="Tu Jhooti Mai makkaar Poster">
+                <h2>Tu Jhooti Mai makkaar Poster</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="trend4.jpg" alt="Vikram vedha Poster">
+                <h2>Vikram vedha Poster</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="download-1.jpg" alt="iron man 2 Poster">
+                <h2>iron man 2</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="download-2.jpg" alt="iron man 3 Poster">
+                <h2>iron man 3</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+            <div class="movie-poster">
+                <img src="download.jpg" alt="iron man Poster">
+                <h2>iron man</h2>
+                <a href="movie1-download-link.mp4" class="watch-button">Download</a>
+            </div>
+            <!-- Repeat the above div for each movie poster -->
+        </div>
+    </section>
+
+    <!-- Other content can be added here -->
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 MovieHub. All Rights Reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

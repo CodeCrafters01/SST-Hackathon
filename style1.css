@@ -1,0 +1,270 @@
+/* Reset some default styles */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    
+}
+
+/* Header Styles */
+header {
+    background-color: #560000; /* Change to your desired color */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(8, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px; /* Width remains the same */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+    position: relative;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+/* Movie Slider Styles */
+.movie-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 20px 0;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.movie-poster {
+    width: 250px;
+    text-align: center;
+    background-color: #010000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+   
+}
+
+.movie-poster img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.movie-poster h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.watch-button {
+    background-color: #00162d;
+    color: #530000;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    display: block;
+    font-size: 14px;
+}
+
+.watch-button:hover {
+    background-color: #000000;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    border: aliceblue;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    background-color: #2d1e1e;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #00442c; /* Orange color for the button */
+    color: #fff;
+    border: gainsboro;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button i {
+    margin-right: 5px;
+}
+
+
+
+/* Add this CSS for the updated layout */
+/* ... Your existing CSS ... */
+
+/* Move the movie section below the search bar */
+.movie-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 20px 0;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+/* Adjust the styling of the movie posters and buttons */
+.movie-poster {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.movie-poster h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.watch-button {
+    background-color: #38011d;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    display: block;
+    font-size: 14px;
+}
+
+.watch-button:hover {
+    background-color: #000106;
+}
+
+
+/* Add this CSS for the updated layout */
+/* ... Your existing CSS ... */
+
+/* Trending Movies Section */
+.trending-movies {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.trending-movies h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.trending-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    animation: slide 10s infinite alternate; /* Auto-sliding animation */
+}
+
+.trending-movie {
+    flex: 0 0 250px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.trending-movie img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.trending-movie h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Animation keyframes for sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* CSS for background color change on hover */
+header nav ul li:hover {
+    background-color: #cebaac; /* Change to the brighter color you prefer */
+}
+
